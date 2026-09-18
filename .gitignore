@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dados e artefatos do Databricks
+*.csv
+checkpoints/
+*.dbc
+
+# Sistema
+.DS_Store
