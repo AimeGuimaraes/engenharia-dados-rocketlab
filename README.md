@@ -177,7 +177,13 @@ Data de referência (lançamento mais recente realizado na base): **2026-02-19**
 
 ## Orquestração (Databricks Workflow)
 
-Job com 3 tasks — `to_Bronze` → `to_Silver` → `to_Gold` — com dependência explícita entre elas (uma task só inicia após a conclusão bem-sucedida da anterior) e agendamento configurado para simular uma rotina de atualização em produção. Definição exportada em `job.yaml`; print da execução de sucesso, mostrando as dependências entre as tasks, em `docs/prints/job_execution.png`.
+Job com 3 tasks — `to_Bronze` → `to_Silver` → `to_Gold` — com dependência explícita entre elas (uma task só inicia após a conclusão bem-sucedida da anterior) e agendamento configurado (schedule diário) para simular uma rotina de atualização em produção. Definição exportada em [`job.yaml`](job.yaml).
+
+Prints da configuração e da execução de sucesso, mostrando as dependências entre as tasks:
+
+![Job - tasks e dependências](print_1.png)
+![Job - agendamento configurado](print_2.png)
+![Job - execução de sucesso](print_3.png)
 
 ## Autor
 
